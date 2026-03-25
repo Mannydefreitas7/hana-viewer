@@ -1,0 +1,58 @@
+{
+  "name": "hana-viewer",
+  "version": "0.1.0",
+  "description": "React wrapper for the hana-viewer web component",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run clean && npm run typecheck && tsup src/index.ts --format esm --dts --outDir dist --clean",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "web-component",
+    "lit",
+    "viewer",
+    "hana"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@lit/react": "^1.0.8",
+    "lit": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0",
+    "tsup": "^8.2.0"
+  }
+}
