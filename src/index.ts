@@ -1,4 +1,4 @@
-import { SplineViewer } from "@/lib";
+import { SplineViewer } from "@/lib/hana";
 import { createComponent } from "@lit/react";
 import * as React from "react";
 
