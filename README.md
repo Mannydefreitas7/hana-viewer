@@ -1,6 +1,6 @@
 # hana-viewer
 
-![Hana spline-inspired illustration](https://raw.githubusercontent.com/Mannydefreitas7/hana-viewer/main/assets/hana-spline.svg)
+![Hana spline-inspired illustration](https://raw.githubusercontent.com/Mannydefreitas7/hana-viewer/master/assets/hana-spline.svg)
 
 React wrapper for the `hana-viewer` web component.
 
